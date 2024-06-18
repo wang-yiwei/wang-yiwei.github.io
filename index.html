@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yiwei Wang - Homepage</title>
+
+  <!--
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon"> -->
+  <script>
+    window.onload = function() {
+      const canvas = document.createElement('canvas');
+      canvas.width = 19; // Size of favicon in pixels
+      canvas.height = 19; // Size of favicon in pixels
+      const ctx = canvas.getContext('2d');
+      ctx.font = '16px Arial';
+      ctx.fillText('🍀', 0, 16); // The shamrock emoji
+
+      const link = document.createElement('link');
+      link.rel = 'icon';
+      link.href = canvas.toDataURL('image/png');
+      document.head.appendChild(link);
+    };
+  </script>
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <!-- <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="90"> -->
+          <img src="./assets/images/profile.jpg" alt="Yiwei Wang" class="rounded-avatar">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yiwei Wang">王弋潍 · Yiwei Wang</h1>
+          <!-- <h1 class="name" title="Yiwei Wang">Yìwéi Wáng</h1> -->
+
+          <p class="title">/ì wéi wáŋ/</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:wywjobs@gmail.com" class="contact-link">wywjobs@gmail.com</a>
+            </div>
+
+          </li>
+
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>
+                Darmstadt-Wixhausen,
+                Germany
+              </address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/wang-yiwei" class="social-link">
+              <span title="GitHub"><ion-icon name="logo-github"></ion-icon></span>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=MoGwc4YAAAAJ&hl=en" class="social-link">
+              <span title="Google Scholar"><ion-icon name="school"></ion-icon></span>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/yiwei-wang-sxxz/" class="social-link">
+              <span title="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></span>
+            </a>
+          </li>        
+          
+          <li class="social-item">
+            <a href="https://twitter.com/hieusong88" class="social-link">
+              <span title="Twitter"><ion-icon name="logo-twitter"></ion-icon></span>
+            </a>
+          </li>
+        
+          <!-- <li class="social-item">
+            <a href="https://blog.csdn.net/IwanVan" class="social-link">
+              <span title="CSDN Blog"><ion-icon name="planet"></ion-icon></span>
+            </a>
+          </li> -->
+        
+        </ul>
+        
+
+      </div>
+
+    </aside>
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Home</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Research</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li> -->
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li> -->
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+
+        </ul>
+
+      </nav>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="home">
+
+        <header>
+          <h2 class="h2 article-title">Bio</h2>
+        </header>
+
+        <section class="about-text">
+
+
+          <p>
+          I am currently a doctoral researcher at the <a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/index.en.jsp"><u>Ubiquitous Knowledge Processing Lab (UKP)</u></a>, at <a href="https://www.tu-darmstadt.de/"><u>Technische Universität Darmstadt</u></a>.
+          , under the supervision of <a href="https://www.informatik.tu-darmstadt.de/ukp/ukp_home/head_ukp/index.en.jsp"><u>Prof. Dr. Iryna Gurevych</u></a>.            
+          My PhD programme is part of the <a href="https://intertext.ukp-lab.de/"><u>InterText Initiative</u></a>, and my research focuses on Computational Linguistics, Natural Language Processing, Machine Learning, and Multilingualism.
+          </p>
+
+          <p>
+            Before joining UKP, I earned my Master's degree in Speech and Language Processing from <a href="https://www.uni-konstanz.de"><u>Universität Konstanz</u></a>, where I was supervised by <a href="https://scholar.google.de/citations?user=F_RkRmcAAAAJ&hl"><u>Prof. Dr. Prof. Andreas Spitz</u></a> and <a href="https://scholar.google.de/citations?user=mHwLPGQAAAAJ&hl=en"><u>Prof. Dr. Diego Frassinelli</u></a>.
+            I also hold a Bachelor's degree in Germanic Linguistics with a specialisation in Computational Linguistics from <a href="https://en.nankai.edu.cn/"><u>Nankai University</u></a>, during which I spent a significant exchange year at <a href="https://www.uni-jena.de"><u>Friedrich-Schiller-Universität Jena</u></a>.
+          </p>
+
+          <p>
+            If you are interested in collaborating on compelling NLP topics, please feel free to <a href="mailto:wywjobs@gmail.com"><u>email</u></a> me.
+          </p>
+
+          <h4 class="h4 article-title">News & Updates</h4>
+          <section class="about-text">
+            <h3 class="subsubtitle">2024</h3>
+            <ul class="research-interests-list">
+              <li><b>May:</b> I am thrilled to announce that I will be joining the UKP Lab for my PhD starting in Summer 2024.</li>
+            </ul>
+          </section>
+
+
+
+
+          <h4 class="h4 article-title">Outside of Work</h4>
+          <p>
+            When I'm not deep in research, you can find me indulging in aerobic sports such as hiking, long-distance jogging and cycling.
+            I'm also an avid fan of competitive sports. Whether it's cheering for the <a href="https://en.wikipedia.org/wiki/San_Antonio_Spurs"><u>San Antonio Spurs</u></a> or rooting for <a href="https://en.wikipedia.org/wiki/Team_Vitality"><u>Team Vitality</u></a> in esports.
+          </p>
+            
+          <p>
+            Beyond my endeavours in approaching languages via machines, I have a keen interest in learning natural languages and exploring their dialects in a traditional way.
+            I am currently working on Japanese, <a href="https://en.wikipedia.org/wiki/Cantonese"><u>Cantonese</u></a> and <a href="https://en.wikipedia.org/wiki/Swabian_German"><u>Swabian</u></a>/ <a href="https://en.wikipedia.org/wiki/Alemannic_German"><u>Alemannic</u></a> German, while I'm not yet at the authentic level, I am enjoying the journey and content with progressing at my own pace savouring each new word and phrase as I go.
+          </p>
+
+
+          <!-- <h4 class="h4 article-title"></h4>
+          <p>
+
+          </p>   -->
+
+        </section>
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+
+      </article>
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Short CV</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            If you would like a full version of my resume, please contact me by <a href="mailto:wywjobs@gmail.com">email</a>.
+          </p>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <!-- <ion-icon name="book-outline"></ion-icon> -->
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PhD. in Computer Science, UKP Lab, Technical University of Darmstadt, Germany</h4>
+
+              <span>Aug. 2024 — present</span>
+
+              <!-- <p class="timeline-text">
+                Specialised in Machine Language Processing with Research Focus:<br>
+                - Language Toxicity Detection<br>
+                - Text Style Transfer<br>
+                - Safe Conditional Text Generation with Large Language Models<br>
+              </p> -->
+
+              <p class="timeline-text">
+                Advisors: I. Gurevych.
+              </p> 
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">M.A. in Speech and Language Processing, University of Konstanz, Germany</h4>
+
+              <span>Oct. 2020 — Sep. 2023</span>
+
+              <p class="timeline-text">
+                Title of thesis: <b>DistillDetox: Knowledge Distillation for Improved Text Detoxification</b> (1.0/ 5.0)
+              </p>
+
+              <p class="timeline-text">
+                Graduated with distinction, Advisors: A. Spitz, D. Frassinelli.
+              </p>              
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">B.A. Study Abroad, Friedrich Schiller University Jena, Germany</h4>
+
+              <span>Oct. 2018 — Sep. 2019</span>
+
+              <p class="timeline-text">
+                Germanic Linguistics with a focus on Theoretical Linguistics and Computational Linguistics
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">B.A. in Germanic Linguistics & Computational Linguistics, Nankai University, PR. China</h4>
+
+              <span>Sep. 2016 — Aug. 2020</span>
+
+              <p class="timeline-text">
+                Title of Thesis: <b>Evaluation of the Machine Translation of Chinese Idioms Into German</b> (written in German)
+              </p>
+
+              <p class="timeline-text">
+                Advisors: Dr. Yingbin Ma.
+              </p> 
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="desktop-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Professional Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">NLP Engineer, BITE GmbH, Germany</h4>
+
+              <span>Aug. 2022 — Jul. 2024</span>
+
+              <p class="timeline-text">
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Assistant, Karlsruhe Institute of Technology, Germany</h4>
+
+              <span>Sep. 2023 — Jan. 2024</span>
+
+              <p class="timeline-text">
+
+              </p>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IT Intern, Volkswagen Automatic Transmission (Tianjin) Co. Ltd., PR. China</h4>
+
+              <span>2019. Sep — Feb. 2020</span>
+
+              <p class="timeline-text">
+
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5 skill-header">Programming</h5>
+                <data value="80">Python, Shell, R, HTML, CSS</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5 skill-header">Editing Applications</h5>
+                <data value="80">LaTeX, Markdown, Microsoft Office</data>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5 skill-header">Languages</h5>
+                <data value="80">
+                  English (C2), German (C2), Mandarin, Jin Chinese, 
+                  Cantonese (Good Proficiency)</data>
+              </div>
+
+            </li>
+
+            <!-- <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li> -->
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- RESEARCH -->
+            <!-- RESEACH PAGE -->
+      <article class="research" data-page="research">
+
+        <header>
+          <h2 class="h2 article-title">Research</h2>
+        </header>
+
+        <section class="about-text">
+          <h3 class="h3 subtitle">Research Interests</h3>
+          <ul class="research-interests-list">
+            <li>LLM Application</li>
+            <li>Toxic Language Detection/ Detoxification</li>
+            <li>Cross-lingual Adaption/ Multilingualism-NLP</li>
+            <li>Knowledge Distillation</li>
+          </ul>
+        </section>
+
+        <section class="about-text">
+          <h3 class="h3 subtitle">Publications</h3>
+          <ul class="research-interests-list">
+            <li><s>I am working on it. Please check back later for updates XD</s></li>
+          </ul>
+        </section>
+
+      </article>
+
+
+
+      <!-- -- Contact section -- -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact Me</h2>
+        </header>
+
+
+        <section class="about-text">
+
+          <p>
+            If you have any questions, are interested in my research, or would like to discuss potential collaborations in the fields of Natural Language Processing, Computational Linguistics, or Machine Learning, I’d love to hear from you.
+          </p>
+          
+          <p>
+            The best way to reach me is via email. Please feel free to write to me at: <a href="mailto:wywjobs@gmail.com">wywjobs@gmail.com</a>. I make an effort to respond to all emails promptly.
+          </p>
+
+          Looking forward to connecting with you!
+        </section>
+
+        <!-- <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section> -->
+
+        <!-- <section class="contact-form"> -->
+
+          <!-- <h3 class="h3 form-title">Contact Form</h3> -->
+<!-- 
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form> -->
+
+        <!-- </section> -->
+
+      </article>
+
+
+
+
+    
+
+    <!-- -- Portfolio section -- -->
+
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfoliooooo</h2>
+        </header>
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <!-- <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </section>
+
+      </article> -->
+
+
+
+    </div>
+
+  </main>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- <p> Yiwei Wang, Copyright © All Rights Reserved.</p> -->
+      <p>Copyright © Yiwei Wang. All Rights Reserved.</p>
+
+      <p>Powered by <a href="https://github.com/codewithsadee/vcard-personal-portfolio">vCard - Personal portfolio</a></p>
+      <!-- <span style="display: inline-block; vertical-align: middle;">Powered by</span> <a href="https://github.com/codewithsadee/vcard-personal-portfolio" style="display: inline-block; vertical-align: middle;">vCard - Personal portfolio</a> -->
+
+    </div>
+  </footer>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
