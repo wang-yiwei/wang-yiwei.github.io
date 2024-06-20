@@ -338,8 +338,9 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
+  margin-top: 15px;
   margin-bottom: 15px;
-  max-height: 112px;
+  max-height: 145px;
   overflow: hidden;
   transition: var(--transition-2);
 }
@@ -1371,6 +1372,8 @@ textarea.form-input::-webkit-resizer { display: none; }
    */
 
   .sidebar {
+    width: 100%;
+    max-width: 300px;
     max-height: 180px;
     margin-bottom: 30px;
   }
@@ -1926,8 +1929,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 .rounded-avatar {
   border-radius: 15%;  /* Makes the image round */
-  width: 120px;        /* Adjust width as needed */
+  width: 110px;       /* Adjust width as needed */
   height: auto;        /* Maintains the aspect ratio */
+  object-fit: cover;
 }
 
 .footer {
