@@ -1934,6 +1934,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   object-fit: cover;
 }
 
+
+
+
+/* footer */
+
 .footer {
   background-color: #1B1B1B;
   color: #fff;
@@ -1946,6 +1951,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 .footer a {
@@ -1960,6 +1967,13 @@ textarea.form-input::-webkit-resizer { display: none; }
 .footer p {
   white-space: nowrap;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    margin-bottom: 55px; /* Ensure there's enough space for the footer */
+  }
+}
+
 
 strong {
   /* color: var(--orange-yellow-crayola); or any color that fits your design */
