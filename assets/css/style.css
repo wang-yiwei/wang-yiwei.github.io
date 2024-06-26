@@ -338,7 +338,7 @@ main {
 \*-----------------------------------*/
 
 .sidebar {
-  margin-top: 15px;
+  /* margin-top: 15px; */
   margin-bottom: 15px;
   max-height: 145px;
   overflow: hidden;
