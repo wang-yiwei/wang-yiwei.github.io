@@ -571,18 +571,42 @@ ion-icon {
 }
 
 /* GLightbox overrides: captions and controls styled for dark theme */
-.glightbox-clean .gdesc-inner {
-  background: rgba(20, 20, 20, 0.85);
-  color: var(--white-2);
-  border-radius: 12px;
-  padding: 12px 14px;
-  box-shadow: var(--shadow-2);
+.glightbox-clean .gdesc{
+  position: absolute !important;
+  inset: auto 0 max(0px, env(safe-area-inset-bottom)) 0;
+  text-align: left;
+  padding: 0;
 }
+.glightbox-clean .gdesc-inner{
+  display: block;
+  margin: 0;
+  padding: 10px 16px;
+  color: #fff;
+  background: linear-gradient( to top, rgba(0,0,0,.65), rgba(0,0,0,.25) );
+  border-radius: 0;
+  box-shadow: none;
+  max-width: none;
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-500);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Make sure z-index is above the image but below buttons if needed */
+.glightbox-container .gdesc{ z-index: 20; }
+
+/* Respect very small screens */
+@media (max-width: 420px){
+  .glightbox-clean .gdesc{ left: 12px; bottom: 12px; }
+  .glightbox-clean .gdesc-inner{ font-size: 13px; padding: .5rem .7rem; }
+}
+
+
 
 .glightbox-clean .gslide-title {
   color: var(--white-2);
   font-family: var(--ff-poppins);
-  font-size: 18px;
+  font-size: 19px;
   font-weight: var(--fw-600);
   text-align: center;
   margin-bottom: 6px;
@@ -591,7 +615,7 @@ ion-icon {
 .glightbox-clean .gslide-desc {
   color: var(--light-gray);
   font-family: var(--ff-poppins);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6;
   text-align: center;
 }
