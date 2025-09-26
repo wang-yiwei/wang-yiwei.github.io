@@ -570,6 +570,52 @@ ion-icon {
   transform: scale(1.05);
 }
 
+/* GLightbox overrides: captions and controls styled for dark theme */
+.glightbox-clean .gdesc-inner {
+  background: rgba(20, 20, 20, 0.85);
+  color: var(--white-2);
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: var(--shadow-2);
+}
+
+.glightbox-clean .gslide-title {
+  color: var(--white-2);
+  font-family: var(--ff-poppins);
+  font-size: 18px;
+  font-weight: var(--fw-600);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.glightbox-clean .gslide-desc {
+  color: var(--light-gray);
+  font-family: var(--ff-poppins);
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.glightbox-clean .gclose,
+.glightbox-clean .gnext,
+.glightbox-clean .gprev {
+  background: rgba(20, 20, 20, 0.6);
+  color: var(--white-2);
+  border-radius: 10px;
+}
+
+.glightbox-clean .gclose:hover,
+.glightbox-clean .gnext:hover,
+.glightbox-clean .gprev:hover {
+  background: rgba(20, 20, 20, 0.9);
+  color: var(--orange-yellow-crayola);
+}
+
+.glightbox-clean .gcounter {
+  color: var(--light-gray);
+  font-family: var(--ff-poppins);
+}
+
 /**
  * #service 
  */

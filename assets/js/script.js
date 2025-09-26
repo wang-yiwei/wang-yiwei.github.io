@@ -166,6 +166,13 @@ if (window.GLightbox) {
   GLightbox({
     selector: '.glightbox',
     touchNavigation: true,
-    loop: true
+    loop: true,
+    plyr: {
+      css: '',
+      js: ''
+    },
+    openEffect: 'zoom',
+    closeEffect: 'fade',
+    slideEffect: 'fade'
   });
 }
