@@ -160,3 +160,19 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Initialize GLightbox if available (for media galleries)
+if (window.GLightbox) {
+  GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    plyr: {
+      css: '',
+      js: ''
+    },
+    openEffect: 'zoom',
+    closeEffect: 'fade',
+    slideEffect: 'fade'
+  });
+}
