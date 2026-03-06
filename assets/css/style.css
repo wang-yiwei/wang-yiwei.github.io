@@ -476,6 +476,14 @@ ion-icon {
   pointer-events: none;
 }
 
+.social-iconify {
+  width: 1em;
+  height: 1em;
+  display: block;
+  color: currentColor;
+  pointer-events: none;
+}
+
 
 
 
